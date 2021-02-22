@@ -10,23 +10,23 @@ class Cli < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/rootly-io/cli/releases/download/v0.0.2/cli_0.0.2_darwin_amd64.tar.gz"
-    sha256 "0c051a4849ed18afd11b8acbfa97981108c3802d80c290e4134dd0860883d4fd"
+    sha256 "c843ceb9244cba1487b5a4dda6499e62b88b9da8277612ab8a8ca9471dc5141a"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/rootly-io/cli/releases/download/v0.0.2/cli_0.0.2_darwin_arm64.tar.gz"
-    sha256 "e40dc678a1d771dae0ab174447db930284204039ea611527b550cc4fc9d92845"
+    sha256 "a72c2ce1f581b94f6f6fc0990f341567649aea7423e7162f63916da4442b1ba7"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/rootly-io/cli/releases/download/v0.0.2/cli_0.0.2_linux_amd64.tar.gz"
-    sha256 "5c42ab81770265f9321542ca33e63ee4e05b70045bb8dc05690ac0b748d5cdce"
+    sha256 "7fbc5648bf413988edb9b7737f2656fa8ffe8ea3e3a5696335609ebff7abb4fc"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
     url "https://github.com/rootly-io/cli/releases/download/v0.0.2/cli_0.0.2_linux_armv6.tar.gz"
-    sha256 "9b44c2d7f28d939974ea72cf316ba7d4852f06b244cc7f39dbeea8a29e84e232"
+    sha256 "85ff23776f4684c4e096a24904678066d9a4a87a58dc6b89accdb54ee4293e73"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/rootly-io/cli/releases/download/v0.0.2/cli_0.0.2_linux_arm64.tar.gz"
-    sha256 "385c5f90fea3fce2d34e5851bf503cd8d636d47bda083e45d56036e3d9338b33"
+    sha256 "63be7b4d9ffeb1edc886d941a57efe8eca3f9d801b271a6bae30a3d6c43e27a9"
   end
 
   def install
