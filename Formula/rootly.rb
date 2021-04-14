@@ -5,28 +5,28 @@
 class Rootly < Formula
   desc "Command line tool for rootly.io"
   homepage "https://rootly.io"
-  version "1.1.0"
+  version "1.1.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rootly-io/cli/releases/download/v1.1.0/rootly_1.1.0_darwin_amd64.tar.gz"
-    sha256 "719c920e3946fcb08d6c160db226c3ab65980310ef5149b14359c0ad7a04c879"
+    url "https://github.com/rootly-io/cli/releases/download/v1.1.1/rootly_1.1.1_darwin_amd64.tar.gz"
+    sha256 "152c4bfa10e04085681fe4f331cbc9ace6076dfaa167886cfef3fff5f9fee17f"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/rootly-io/cli/releases/download/v1.1.0/rootly_1.1.0_darwin_arm64.tar.gz"
-    sha256 "3985395196ec09e790637cb3d1f5f0f53776b0c6961da6bd8396bbedace859b1"
+    url "https://github.com/rootly-io/cli/releases/download/v1.1.1/rootly_1.1.1_darwin_arm64.tar.gz"
+    sha256 "353a4b08b1487337fb01a12ac6e7a07e095aebf6d76dcbd17feb9a902793a691"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rootly-io/cli/releases/download/v1.1.0/rootly_1.1.0_linux_amd64.tar.gz"
-    sha256 "c6c29db7cee07607cc12edd8f8c8f33459d357287f87f9a2c063922011d87fad"
+    url "https://github.com/rootly-io/cli/releases/download/v1.1.1/rootly_1.1.1_linux_amd64.tar.gz"
+    sha256 "feba2df4c5a1e176972a055c2ebf1823566de1477c850d09cf81b2ad95d5c21c"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/rootly-io/cli/releases/download/v1.1.0/rootly_1.1.0_linux_armv6.tar.gz"
-    sha256 "e2b1be12a43e99051d189fe09136e500ff000dc09c14b4a15cb08a86402ec67b"
+    url "https://github.com/rootly-io/cli/releases/download/v1.1.1/rootly_1.1.1_linux_armv6.tar.gz"
+    sha256 "fb0af967f10fe3b0f5085e4bb1ca22beb1d6d67e26807f06b0c5d327b9ce33c0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/rootly-io/cli/releases/download/v1.1.0/rootly_1.1.0_linux_arm64.tar.gz"
-    sha256 "d73f25645c8fe6e32fd24a3818c0c047f1431957edbd31b30afd0197a029d6c8"
+    url "https://github.com/rootly-io/cli/releases/download/v1.1.1/rootly_1.1.1_linux_arm64.tar.gz"
+    sha256 "341d2260ced9f6ed6237454fa182a5476fa4a94b8eaa7d8d9d3a2b78062d2448"
   end
 
   def install
