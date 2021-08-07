@@ -5,32 +5,32 @@
 class Rootly < Formula
   desc "Command line tool for rootly.io"
   homepage "https://rootly.io"
-  version "1.1.3"
+  version "1.1.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rootly-io/cli/releases/download/v1.1.3/rootly_1.1.3_darwin_amd64.tar.gz"
-      sha256 "b79f49d5d68e0e8c74512e9b797cc165cf54232098d88f006f820f3f4208dbae"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.4/rootly_1.1.4_darwin_amd64.tar.gz"
+      sha256 "47637a050cf581138c5b8c57b09c77b9aed6037aaa47d59271d9d14b11c7a2e4"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rootly-io/cli/releases/download/v1.1.3/rootly_1.1.3_darwin_arm64.tar.gz"
-      sha256 "678127b27f98d2d6fcdd578e5db9d11ebd8c109b2c05f7535927b6199b1b92d9"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.4/rootly_1.1.4_darwin_arm64.tar.gz"
+      sha256 "6c9d323922cad352038746f6093ce5026c7e07588b265d54b99ba65c612f06a8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rootly-io/cli/releases/download/v1.1.3/rootly_1.1.3_linux_amd64.tar.gz"
-      sha256 "9696658ab9e2a42d4844c3ca84137217b9cfb7fadcb32a9cb3db66a20be20e15"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.4/rootly_1.1.4_linux_amd64.tar.gz"
+      sha256 "1be35efe4c1d8f6a5ff70b7a7aa3b21b5b73ed90fafdb6951f913314502216e7"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rootly-io/cli/releases/download/v1.1.3/rootly_1.1.3_linux_armv6.tar.gz"
-      sha256 "54c5e45279bff8f944a912fe76fd7f104febc5b03c8caabd57f6ae141ffa97bf"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.4/rootly_1.1.4_linux_armv6.tar.gz"
+      sha256 "3df62d7bfaddfe9f715940cb90bbef4e665745db73664131b423c0eab96d9441"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootly-io/cli/releases/download/v1.1.3/rootly_1.1.3_linux_arm64.tar.gz"
-      sha256 "50059cba2cf67fc5fa04544a961c046b89178cabf8c87936c5d33505c0ab5e07"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.4/rootly_1.1.4_linux_arm64.tar.gz"
+      sha256 "fca1530b069a9411e6bbf3efd663a35024873807e5431c056c8829b5153c4646"
     end
   end
 
