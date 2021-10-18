@@ -5,32 +5,32 @@
 class Rootly < Formula
   desc "Command line tool for rootly.io"
   homepage "https://rootly.io"
-  version "1.1.5"
+  version "1.1.6"
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/rootlyhq/cli/releases/download/v1.1.5/rootly_1.1.5_darwin_amd64.tar.gz"
-      sha256 "8dc68473bcd75b4769710223c0278b3f80b68ae547eca66692cd26945cb36397"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/rootlyhq/cli/releases/download/v1.1.5/rootly_1.1.5_darwin_arm64.tar.gz"
-      sha256 "75082fd58c4ed410ba5d075caf1c3d1f319b8305a2638cfb093d3a810dba9f30"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.6/rootly_1.1.6_darwin_arm64.tar.gz"
+      sha256 "2b2fb2f36e506202970eaf3e0e713e1e07c43abb3285602e9403910fd6ff73d6"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.6/rootly_1.1.6_darwin_amd64.tar.gz"
+      sha256 "71a705262a9d1c989af63f27279b112142596e3dbaf6ff412e06e4c2554ae1f6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rootlyhq/cli/releases/download/v1.1.5/rootly_1.1.5_linux_amd64.tar.gz"
-      sha256 "b05caa38237b71503f6c89886a311b988ac324615082f91d961a4647afa6e60a"
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/cli/releases/download/v1.1.5/rootly_1.1.5_linux_armv6.tar.gz"
-      sha256 "53a96028def53a11238daec471c81cd7ca31afa834e153b6edc9eef7a2d67f5e"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.6/rootly_1.1.6_linux_amd64.tar.gz"
+      sha256 "420185c318f28bfe0f3a45c58f5b39ecece2c86be00d34704688600d48141ec8"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/cli/releases/download/v1.1.5/rootly_1.1.5_linux_arm64.tar.gz"
-      sha256 "6c13c8c404542eddac738f3b80c1b71b80acdbc573c7fe6e5dcdb512a49fa3ca"
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.6/rootly_1.1.6_linux_arm64.tar.gz"
+      sha256 "3d543e5e3630bcb10964287e367ee74e596dde4b440a7734712d5a82fce6adf0"
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/rootlyhq/cli/releases/download/v1.1.6/rootly_1.1.6_linux_armv6.tar.gz"
+      sha256 "73cc395cc4321a0bbd477942a37a7f953fd01bf523851610b3b9dbeea2032b3f"
     end
   end
 
