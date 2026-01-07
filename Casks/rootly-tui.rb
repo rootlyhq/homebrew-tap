@@ -14,22 +14,22 @@ cask "rootly-tui" do
   on_macos do
     on_intel do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_darwin_amd64.tar.gz"
-      sha256 "660703e03beb2487f6b09da71bb4df0395924f176865a17c347540332c83e87e"
+      sha256 "5884385b6c7d9047c6868d515c959a112ef97fba7e4d60649133f5b009cadd0a"
     end
     on_arm do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_darwin_arm64.tar.gz"
-      sha256 "a1d2cd4150da7e6af0c772eed9b87667f55c5641d4f4a749e67bb18096ec6512"
+      sha256 "9084be9a46d2fcfd3575261dc1e4142bb9dfc1a2cedb0cc67c31af25d785adba"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_linux_amd64.tar.gz"
-      sha256 "008c27d1b1ab37bc74a9a36f73ad9c17a6764d50f1318bee167a942f9dfe773a"
+      sha256 "f80c1a4a30e516c60e9165f0d2f1f08360335121786b6462608c59aa307300eb"
     end
     on_arm do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_linux_arm64.tar.gz"
-      sha256 "2fc2d0dbcb0729d139cb4f8703bdc58c4d2b250ba70808ae1392c4f00b72db48"
+      sha256 "d43d282ef11a0d88451005ebe0bc72bf1bc5390e970931f3fda3ba3c7a94eb6f"
     end
   end
 
