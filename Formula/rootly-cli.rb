@@ -5,20 +5,20 @@
 class RootlyCli < Formula
   desc "Rootly CLI for managing incidents, alerts, and workflows"
   homepage "https://rootly.com"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.1/rootly-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a249018d419cec330d990bcc1340df0c93d493ee3c3ffb19da90af465dc89fc1"
+      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.2/rootly-cli_0.1.2_darwin_amd64.tar.gz"
+      sha256 "c953a8e90f4d04dc3c91fa12c83bedcc1ddc76e61fe7b54b3d34a1421bfcdd29"
 
       def install
         bin.install "rootly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.1/rootly-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "699e84d2054a910c51d2e9e9f6bd5eadca2c40dd44b941efb0505548307d7552"
+      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.2/rootly-cli_0.1.2_darwin_arm64.tar.gz"
+      sha256 "7185c0625dcd217774a4223601f77a40847a0177d6c84f91e5d6e5e3220dcea9"
 
       def install
         bin.install "rootly"
@@ -28,15 +28,15 @@ class RootlyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.1/rootly-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "e97da17fd10ccc099df50087c138d817435718ed1315976034d80974ee6dc062"
+      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.2/rootly-cli_0.1.2_linux_amd64.tar.gz"
+      sha256 "f2c882b06c2662eea919258250d7a2b02198d4dd6b28de503f4f9bfc8c377204"
       def install
         bin.install "rootly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.1/rootly-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "793cbfe57709cf0a824cbe5bbb43874afdbc2c2874bcb7a58aa16b9f4174322e"
+      url "https://github.com/rootlyhq/rootly-cli/releases/download/v0.1.2/rootly-cli_0.1.2_linux_arm64.tar.gz"
+      sha256 "12764ac1d5032e20d2590edc11763ff4d2c1fbd2a7452b3d7364716f9652ba1d"
       def install
         bin.install "rootly"
       end
