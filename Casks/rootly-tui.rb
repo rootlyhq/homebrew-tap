@@ -3,7 +3,7 @@ cask "rootly-tui" do
   name "rootly-tui"
   desc "Terminal UI for Rootly incidents and alerts"
   homepage "https://rootly.com"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "rootly-tui" do
   on_macos do
     on_intel do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_darwin_amd64.tar.gz"
-      sha256 "5884385b6c7d9047c6868d515c959a112ef97fba7e4d60649133f5b009cadd0a"
+      sha256 "abaf31fb4001a0bc2e82a489fe4bd1e19b3ce95b3ac1021ca355330743548eeb"
     end
     on_arm do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_darwin_arm64.tar.gz"
-      sha256 "9084be9a46d2fcfd3575261dc1e4142bb9dfc1a2cedb0cc67c31af25d785adba"
+      sha256 "2fbee06621a0887c499909d8fe41c5bb8f6f2edf298f6b4ead799d281e306e38"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_linux_amd64.tar.gz"
-      sha256 "f80c1a4a30e516c60e9165f0d2f1f08360335121786b6462608c59aa307300eb"
+      sha256 "6cf6ad8046685f35222d5be15a8aa443c33f3075705d933c3537d484a239a793"
     end
     on_arm do
       url "https://github.com/rootlyhq/rootly-tui/releases/download/v#{version}/rootly-tui_#{version}_linux_arm64.tar.gz"
-      sha256 "d43d282ef11a0d88451005ebe0bc72bf1bc5390e970931f3fda3ba3c7a94eb6f"
+      sha256 "4964062ddbcd6511ca84064a38ef4e8f8ee1b0c3f20d8207d4097b32e39a987e"
     end
   end
 
