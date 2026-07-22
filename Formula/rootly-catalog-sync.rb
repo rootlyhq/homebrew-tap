@@ -5,20 +5,20 @@
 class RootlyCatalogSync < Formula
   desc "Sync external catalog data into Rootly"
   homepage "https://github.com/rootlyhq/rootly-catalog-sync"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.2.1/rootly-catalog-sync_0.2.1_darwin_amd64.tar.gz"
-      sha256 "c1c06b5c42307e5bb3336bdb0a20aee000cb045d60fb4882f115bdc6809dc9fd"
+      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.3.0/rootly-catalog-sync_0.3.0_darwin_amd64.tar.gz"
+      sha256 "77f28e49d142e85a31c420645b10b9b575c69cbfdcca1b23f200b3a2d0464e50"
 
       define_method(:install) do
         bin.install "rootly-catalog-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.2.1/rootly-catalog-sync_0.2.1_darwin_arm64.tar.gz"
-      sha256 "b053aa78c3770bf9b67acbdedcf2172191c09208c3db33112035b2d68d77edef"
+      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.3.0/rootly-catalog-sync_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d9b46f1d0220655596e21af0b541cb0f6462049b78dd244ed4d67bbe377c85cd"
 
       define_method(:install) do
         bin.install "rootly-catalog-sync"
@@ -28,15 +28,15 @@ class RootlyCatalogSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.2.1/rootly-catalog-sync_0.2.1_linux_amd64.tar.gz"
-      sha256 "c5bfaf79da771d95276778c16be09726a20118a70b28447c7cdffef7fb3bae95"
+      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.3.0/rootly-catalog-sync_0.3.0_linux_amd64.tar.gz"
+      sha256 "43a938ef2a9905928f6cba15285700934ed3a94197053d84fa6ae35a9fb2b0ac"
       define_method(:install) do
         bin.install "rootly-catalog-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.2.1/rootly-catalog-sync_0.2.1_linux_arm64.tar.gz"
-      sha256 "20dd6e1b220322c7b49d2630e75d63099b5e27217568c23d2ef3aa8f6f872c04"
+      url "https://github.com/rootlyhq/rootly-catalog-sync/releases/download/v0.3.0/rootly-catalog-sync_0.3.0_linux_arm64.tar.gz"
+      sha256 "4b04bc38578c76a14b94cf51e9acbdaccb3a9699964ea1a2333b07b892a005d0"
       define_method(:install) do
         bin.install "rootly-catalog-sync"
       end
