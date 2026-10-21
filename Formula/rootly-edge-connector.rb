@@ -5,23 +5,23 @@
 class RootlyEdgeConnector < Formula
   desc "Rootly Edge Connector - Execute custom actions in response to Rootly events"
   homepage "https://github.com/rootlyhq/rootly-edge-connector"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.3/rootly-edge-connector_0.0.3_darwin_amd64.tar.gz"
-      sha256 "d06c1c1cc9cf7a7518b6501cda34460c11c3c273bdf99d8f8fe252fccff235e2"
+      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.4/rootly-edge-connector_0.0.4_darwin_amd64.tar.gz"
+      sha256 "e28dd80645df643eecc8bafc57e84d39e0e7ab53d125cdf9096a4fcd1ea3afce"
 
-      def install
+      define_method(:install) do
         bin.install "rootly-edge-connector"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.3/rootly-edge-connector_0.0.3_darwin_arm64.tar.gz"
-      sha256 "59a6b6522bcc27b5380424ac7724a77e87abf3c35f0e1c5ceacf40cb648e9360"
+      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.4/rootly-edge-connector_0.0.4_darwin_arm64.tar.gz"
+      sha256 "effb0c3f26fcccaab62be79cf85a93cfbaee3badb0c6434628e72174e80b3a66"
 
-      def install
+      define_method(:install) do
         bin.install "rootly-edge-connector"
       end
     end
@@ -29,23 +29,23 @@ class RootlyEdgeConnector < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.3/rootly-edge-connector_0.0.3_linux_amd64.tar.gz"
-      sha256 "a46f86780913088899146a9fbda5c9ce3b25d18b1649be69ee683cecc8db49c1"
-      def install
+      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.4/rootly-edge-connector_0.0.4_linux_amd64.tar.gz"
+      sha256 "e5944eebcfcc4626cc56ba31eeed4f0878b56ccdd33a83cba7bfcf07c1536106"
+      define_method(:install) do
         bin.install "rootly-edge-connector"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.3/rootly-edge-connector_0.0.3_linux_arm.tar.gz"
-      sha256 "eeeb2837e24810136b79bb58c964d51f0eeb32892a160a9df1ad59133e33ba72"
-      def install
+      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.4/rootly-edge-connector_0.0.4_linux_arm.tar.gz"
+      sha256 "8f77ff7b4e6330b7a1b1beea8ac9a87f175333446e037242c18e9e947244f17b"
+      define_method(:install) do
         bin.install "rootly-edge-connector"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.3/rootly-edge-connector_0.0.3_linux_arm64.tar.gz"
-      sha256 "09346f4882a8fd9a860c980cab56f6e97aeaa6bbcaf82243aabcd9a657d26355"
-      def install
+      url "https://github.com/rootlyhq/rootly-edge-connector/releases/download/v0.0.4/rootly-edge-connector_0.0.4_linux_arm64.tar.gz"
+      sha256 "ced55eb74a352c892401cf47205d2a4a44ad27c9e1d9f8811da3ae69e00378e6"
+      define_method(:install) do
         bin.install "rootly-edge-connector"
       end
     end
